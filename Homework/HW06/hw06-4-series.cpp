@@ -17,29 +17,30 @@
         Sum = 11111103
 */
 
-#include <stdio.h>
+#include <stdio.h> //The program calculates the addition of the number 9 according to the number entered by the user.
 
 int main() {
-    int n;
-    printf("Enter number: ");
-    scanf("%d", &n);
+    int n ;
+    
+    printf( "Enter number: ") ;
+    scanf( "%d", &n) ;
 
-    int term = 9;
-    int sum = 0;
+    int term = 9 ;
+    int sum = 0 ;
 
-    printf("Series = ");
+    printf( "Series = ") ;
     for (int i = 0; i < n; i++) {
-        printf("%d", term);
-        sum += term;
+        printf( "%d", term) ;
+        sum += term ;
 
         if (i < n - 1) {
-            printf(" + ");
+            printf( " + ") ;
         }
 
-        term = term * 10 + 9;
-    }
+        term = term * 10 + 9 ;
+    }//end for
 
-    printf("\nSum = %d\n", sum);
+    printf( "\nSum = %d\n" , sum) ;
 
-    return 0;
-}
+    return 0 ;
+}//end main fuction
